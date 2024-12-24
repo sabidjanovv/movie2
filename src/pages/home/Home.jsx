@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <>
       {isPending && (
-        <div className="text-center text-2xl min-h-screen flex justify-center items-center text-red-600 ">
+        <div className="text-center text-2xl min-h-screen flex justify-center items-center text-white ">
           {" "}
           <Loading />
         </div>

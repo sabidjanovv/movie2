@@ -26,6 +26,7 @@
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.0.2",
     "react-toastify": "^11.0.2",
+    "react-typed": "^2.0.12",
     "swiper": "^11.1.15",
     "toast": "^0.5.4",
     "translate": "^3.0.1"

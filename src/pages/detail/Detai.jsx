@@ -35,7 +35,7 @@ const Detail = () => {
 
   useEffect(() => {
     if (error) {
-      toast.error("Film not found !");
+      // toast.error("Film not found !");
       navigate("/");
     }
   }, [error, navigate]);

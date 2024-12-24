@@ -5,7 +5,7 @@ import { request } from "../../api";
 import Movies from "../../components/movies/Movies";
 import Loading from "../../components/loading/Loading";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import toast from "react-hot-toast";
+// import toast from "react-hot-toast";
 import { useDispatch } from "react-redux";
 import { useTranslation } from "react-i18next";
 import translate from "translate";
@@ -44,7 +44,7 @@ const MyMovies = () => {
 
   useEffect(() => {
     if (error) {
-      toast.error("Film not found !");
+      // toast.error("Film not found !");
       navigate("/");
     }
   }, [error, navigate]);
@@ -94,14 +94,11 @@ const MyMovies = () => {
   return (
     <div id="search" className="text-white min-h-screen ">
       <div className="container mx-auto px-4">
-        <h2 className="text-red-500 text-3xl text-center font-bold py-4">
-          <i>{t("genres.pagenation_title")}</i>
-        </h2>
 
         <div className="mb-6">
-          <h3 className="dark:text-white text-lg font-medium mb-2 text-black">
+          {/* <h3 className="dark:text-white text-lg font-medium mb-2 text-black">
             {t("genres.genre_title")}:
-          </h3>
+          </h3> */}
           <div className="genre-scrollbar flex gap-4 overflow-x-auto py-2">
             {genres?.length > 0 ? (
               [
@@ -113,7 +110,7 @@ const MyMovies = () => {
                   onClick={() => handleGenreChange(genre.id)}
                   className={`py-2 px-4 rounded-md border border-red-500 transition-all duration-300 whitespace-nowrap ${
                     selectedGenre.includes(genre.id)
-                      ? "dark:bg-green-500 dark:text-white bg-blue-500 border-none"
+                      ? "dark:bg-red-500 dark:text-white bg-blue-500 border-none"
                       : "dark:bg-slate-800 dark:text-gray-300 text-black dark:hover:bg-red-500 hover:bg-red-500 hover:text-white"
                   }`}
                 >
