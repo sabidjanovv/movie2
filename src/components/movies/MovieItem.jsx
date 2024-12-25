@@ -34,7 +34,7 @@ const MovieItem = ({
 
   return (
     <div
-      className={`rounded-lg relative overflow-hidden shadow-lg p-4 flex flex-col items-center ${
+      className={`rounded-lg relative overflow-hidden shadow-lg p-4 border border-red-500 flex flex-col items-center ${
         bg ? "dark:bg-black" : ""
       } hover:shadow-2xl transition-shadow duration-300`}
     >
