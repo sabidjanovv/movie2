@@ -35,7 +35,7 @@ const MyMovies = () => {
         .get("/discover/movie", {
           params: {
             page: page,
-            without_genres: "18,10749,99",
+            without_genres: "",
             with_genres: selectedGenre.join(","),
           },
         })
